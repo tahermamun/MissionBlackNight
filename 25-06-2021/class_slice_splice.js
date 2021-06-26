@@ -1,14 +1,13 @@
-
-
-
 // JavaScript Class
 class Guardians {
     constructor(fatherName, motherName, phone) {
         this.fatherName = fatherName,
-            this.motherName = motherName,
-            this.phone = phone
+        this.motherName = motherName,
+        this.phone = phone
     }
 }
+
+
 class Student extends Guardians {
     constructor(name, age, address, college = 'Pagla Garod', fatherName, motherName, phone) {
         super(fatherName, motherName, phone)
@@ -21,11 +20,14 @@ class Student extends Guardians {
         const contact = `Contact__Student: ${this.name} Father: ${this.fatherName}, Father Phone Number: ${this.phone}`
         return contact
     }
+
 }
 
 const student1 = new Student('Taher Mamun', 56, 'Sylhet', 'Mohammad Govt college', 'Mohammad', 'Khairun', '01752833849')
 const student2 = new Student('Suhan', 92, 'Kulna')
 const student3 = new Student('Anondo', 12, 'Kurigram', 'khudiram patshala')
+
+
 
 console.log(student1.emergency())
 console.log(student2.emergency())
