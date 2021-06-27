@@ -11,13 +11,9 @@ function check() {
 }
 
 
-
 var result = check()
 console.dir(check)
 // console.dir(result)
-
-
-
 
 
 function stopWatch() {
