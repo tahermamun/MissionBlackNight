@@ -35,3 +35,26 @@ const promise = new Promise((resolve, reject) => {
 
 promise
     .then(res => console.log(res))
+
+
+
+
+
+    
+
+// Promise Exercise 3 with fetch
+
+const promise = new Promise((resolve, reject) => {
+
+    fetch('https://jsonplaceholder.typicode.com/users')
+        .then(res => res.json())
+        .then(data => {
+            resolve(data)
+        })
+        .catch(err => reject(new Error('It"s Error')))
+
+})
+
+promise
+    .then(res => console.log(res))
+    .catch(err => console.log(err.message))
