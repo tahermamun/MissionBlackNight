@@ -18,18 +18,13 @@ console.log('complete Order for customer 1')
 
 const processOrder = () => {
     console.log('processing Order for customer 1')
-
     setTimeout(() => {
         console.log('Cooking Complete for customer 1')
     }, 3000)
-
     console.log('Order processed for customer 1')
 }
-
 console.log('take Order for customer 1')
-
 processOrder()
-
 console.log('complete Order for customer 1')
 
 
