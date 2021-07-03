@@ -22,11 +22,6 @@
 
 
 
-
-
-
-
-
 // Student.prototype = {
 //     eat() {
 //         console.log(`${this.name} is Eating`)
